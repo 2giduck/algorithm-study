@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-public class _278 {
+public class re_278 {
     public static void main(String[] args) {
 
     }

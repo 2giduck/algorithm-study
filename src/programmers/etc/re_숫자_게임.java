@@ -2,7 +2,7 @@ package programmers.etc;
 
 import java.util.Arrays;
 
-public class 숫자_게임 {
+public class re_숫자_게임 {
     public static void main(String[] args) {
         int[] a1 = new int[] {5,1,3,7},
                 a2 = new int[] {2,2,2,2};

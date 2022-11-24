@@ -1,6 +1,6 @@
 package programmers.etc;
 
-import java.util.HashSet;
+import java.util.LinkedList;
 
 public class re_기지국_설치 {
 
@@ -16,29 +16,24 @@ public class re_기지국_설치 {
 
 
     public static int solution(int n, int[] stations, int w) {
-        int answer = 0;
+        int count = 0;
 
-        var stationHashSet = new HashSet<Integer>();
-        for (int station: stations) { // 이미 불빛이 밝혀지는 정거장 구하기
-            addStation(stationHashSet, station, w);
+        boolean[] presents = new boolean[n + 1];
+        for (int i = 0; i < stations.length; i++) {
+            presents[stations[i]] = true;
         }
 
-        for (int i = 1; i <= n; i++) {
-            if(stationHashSet.contains(i)) continue;
+        var list = new LinkedList<Integer>();
+        list.add(1 + w);
+        while(!list.isEmpty()) {
+            var idx = list.pop();
 
-            if(i + w <= n) {
-                addStation(stationHashSet, i + w, w);
-            }else {
-                addStation(stationHashSet, i, w);
+            if(!presents[idx]) count++;
+
+            if(idx + w +1 <= n) {
+                list.add(idx + w + 1);
             }
-            answer++;
         }
-        return answer;
-    }
-
-    public static void addStation(HashSet<Integer> stationHashSet, int station, int w) {
-        for (int i = station-w; i <= station+w ; i++) {
-            stationHashSet.add(i);
-        }
+        return count;
     }
 }

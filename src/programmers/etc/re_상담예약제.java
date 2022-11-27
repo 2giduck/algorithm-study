@@ -4,7 +4,7 @@ import java.time.LocalTime;
 import java.util.Arrays;
 import static java.time.temporal.ChronoUnit.MINUTES;
 
-public class _상담예약제 {
+public class re_상담예약제 {
     public static void main(String[] args) {
         String[][] b1 = new String[][] {{"09:10", "lee"}},
                 b2 = new String[][] {{"09:55", "hae"}, {"10:05", "jee"} };

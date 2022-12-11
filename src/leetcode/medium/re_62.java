@@ -3,7 +3,7 @@ package leetcode.medium;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class _62 {
+public class re_62 {
     public static void main(String[] args) {
         int m1 = 3, n1 = 7;
         int m2 = 3, n2 = 2;

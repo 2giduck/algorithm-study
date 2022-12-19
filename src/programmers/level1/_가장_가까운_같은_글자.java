@@ -1,5 +1,7 @@
 package programmers.level1;
 
+import java.util.HashMap;
+
 public class _가장_가까운_같은_글자 {
   public int[] solution(String s) {
           int[] answer = new int[s.length()];

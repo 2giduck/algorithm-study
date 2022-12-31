@@ -1,10 +1,6 @@
 package leetcode.easy;
 
 public class re_206 {
-    public static void main(String[] args) {
-
-    }
-
      public class ListNode {
      int val;
      ListNode next;

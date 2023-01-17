@@ -3,7 +3,7 @@ package leetcode.medium;
 import java.util.ArrayList;
 import java.util.List;
 
-public class _133 {
+public class re_133 {
     class Node {
         public int val;
         public List<Node> neighbors;

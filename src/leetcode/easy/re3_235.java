@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-public class re2_235 {
+public class re3_235 {
 
   public class TreeNode {
       int val;

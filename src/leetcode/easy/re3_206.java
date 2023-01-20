@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-public class re2_206 {
+public class re3_206 {
      public class ListNode {
      int val;
      ListNode next;

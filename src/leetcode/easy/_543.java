@@ -1,6 +1,6 @@
 package leetcode.easy;
 
-public class re2_543 {
+public class _543 {
   
    class TreeNode {
       int val;
@@ -14,9 +14,25 @@ public class re2_543 {
           this.right = right;
       }
   }
-  
+
+    private int result;
+
     public int diameterOfBinaryTree(TreeNode root) {
-      return 0;
+        result = 0;
+
+        length(root);
+
+        return result;
     }
 
+    public int length(TreeNode root) {
+        if(root == null) return 0;
+
+        int l = length(root.left);
+        int r = length(root.right);
+
+        result = Math.max(l + r , result);
+
+        return Math.max(l, r) + 1;
+    }
 }

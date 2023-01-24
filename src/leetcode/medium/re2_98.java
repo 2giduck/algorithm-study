@@ -1,4 +1,4 @@
 package leetcode.medium;
 
-public class re_98 {
+public class re2_98 {
 }

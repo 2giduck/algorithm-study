@@ -12,7 +12,18 @@ public class re2_238 {
     }
 
     public static int[] productExceptSelf(int[] nums) {
+        int[] answer = new int[nums.length];
 
-        return null;
+        for(int i = 0, j = 1; i < nums.length; i++) {
+            answer[i] = j;
+            j = j * nums[i];
+        }
+
+        for(int i = nums.length-1, j = 1; i >= 0 ; i--) {
+            answer[i] *= j;
+            j = j * nums[i];
+        }
+
+        return answer;
     }
 }

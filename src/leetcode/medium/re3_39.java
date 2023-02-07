@@ -2,7 +2,7 @@ package leetcode.medium;
 
 import java.util.List;
 
-public class re3_39 {
+public class re4_39 {
     public static void main(String[] args) {
 
     }

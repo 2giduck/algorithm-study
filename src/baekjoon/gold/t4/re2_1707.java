@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class re_1707 {
+public class re2_1707 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
@@ -25,5 +25,7 @@ public class re_1707 {
                 list[u].add(v);
                 list[v].add(u);
             }
-        }}
+        }
+        System.out.println(sb);
+    }
 }

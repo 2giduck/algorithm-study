@@ -2,7 +2,9 @@ package baekjoon.gold.t4;
 
 import java.util.Scanner;
 
-public class re_1043 {
+public class re2_1043 {
+
+    static int[] parent;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();   // 사람의 수
@@ -13,6 +15,5 @@ public class re_1043 {
         for (int i = 0; i < t; i++) {
             tArr[i] = sc.nextInt();
         }
-
     }
 }

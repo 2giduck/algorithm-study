@@ -1,8 +1,8 @@
-package baekjoon.silver.t3;
+package baekjoon.silver.t2;
 
 import java.util.*;
 
-public class re_1874 {
+public class re2_1874 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();

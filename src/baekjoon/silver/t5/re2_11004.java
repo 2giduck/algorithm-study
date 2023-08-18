@@ -1,8 +1,11 @@
 package baekjoon.silver.t5;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
-public class re_11004 {
+public class re2_11004 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
@@ -11,6 +14,5 @@ public class re_11004 {
         for (int i = 0; i < N; i++) {
             arr[i] = sc.nextInt();
         }
-
     }
 }

@@ -21,6 +21,7 @@ public class _9012 {
         }
     }
 
+    //sef
     private static boolean checkVPS(String str) {
         Stack<Character> stack = new Stack<>();
 

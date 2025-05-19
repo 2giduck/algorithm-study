@@ -21,7 +21,6 @@ public class _9012 {
         }
     }
 
-    //d
     private static boolean checkVPS(String str) {
         Stack<Character> stack = new Stack<>();
 

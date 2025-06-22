@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.*;
 
-public class re_1325 {
+public class re2_1325 {
 
     static boolean[] visit;
     static int count;

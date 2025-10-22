@@ -1,7 +1,6 @@
 package leetcode.medium;
 
 public class re_542 {
-    class Solution {
 
         static int[][] distArr = {{0,1}, {0, -1}, {1, 0}, {-1, 0}};
 
@@ -9,6 +8,6 @@ public class re_542 {
 
             return null;
         }
-    }
+
 
 }

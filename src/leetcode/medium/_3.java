@@ -12,19 +12,23 @@ public class _3 {
     }
 
     public static int lengthOfLongestSubstring(String s) {
+        if (s == null || s.isEmpty()) {
+            return 0;
+        }
 
-        int answer = 0;
-        HashSet<Character> set = new HashSet<>();
-        for (int i = 0; i < s.length(); i++) {
-            var count = 0;
-            for (int j = i ; j < s.length(); j++) {
-                var temp = s.charAt(j);
-                if(set.contains(temp)) break;
-                count++;
-                set.add(temp);
+        int answer = 1;
+
+        for(int i = 0; i<s.length()-1; i++) {
+            HashSet<Character> set = new HashSet<>();
+            set.add(s.charAt(i));
+            for(int j = i+1; j<s.length(); j++) {
+                var ch = s.charAt(j);
+                if(set.contains(ch)) {
+                    break;
+                }
+                set.add(ch);
             }
-            answer = Math.max(answer, count);
-            set.clear();
+            answer = Math.max(answer, set.size());
         }
 
         return answer;

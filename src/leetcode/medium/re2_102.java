@@ -2,7 +2,7 @@ package leetcode.medium;
 
 import java.util.List;
 
-public class re_102 {
+public class re2_102 {
 
     public class TreeNode {
       int val;
